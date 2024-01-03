@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">d93a4739e821211076da10591ad2873f</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 07:16:44</sys_created_on>
+        <sys_id>79b35f302f633110d95056e62799b6d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Corporate Gifting" source="x_1101371_corporat">c90e43782f233110d95056e62799b625</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 07:16:44</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

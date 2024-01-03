@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c2be43f82f233110d95056e62799b60f" label="Employee" max_length="40" name="x_1101371_corporat_empdata" type="collection">
+        <element label="Awards/Appreciations" max_length="40" name="awards_appreciations" type="string"/>
+        <element label="e-Wallet Balance" max_length="40" name="e_wallet_balance" read_only="true" type="integer"/>
+        <element label="E-Wallet Balance Validity" max_length="40" name="e_wallet_balance_validity" type="glide_date"/>
+        <element label="e-Wallet Budget" max_length="40" name="e_wallet_budget" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Employee Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Position Level" max_length="40" name="position_level" type="choice">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="AssociaManager" sequence="0" value="AssociaManager"/>
+                <element inactive_on_update="false" label="Associate" sequence="0" value="Associate"/>
+                <element inactive="true" inactive_on_update="true" label="Associate Manager" sequence="1" value="Associate Manager"/>
+                <element inactive_on_update="false" label="Senior Associate" sequence="1" value="Senior Associate"/>
+                <element inactive="true" inactive_on_update="true" label="-TBDTARGET-x_1101371_corporat_empdata" sequence="2" value="-TBDTARGET-x_1101371_corporat_empdata"/>
+                <element inactive_on_update="false" label="Technical Lead" sequence="2" value="Technical Lead"/>
+                <element inactive_on_update="false" label="Manager" sequence="3" value="Manager"/>
+                <element inactive_on_update="false" label="Senior Manager" sequence="4" value="Senior Manager"/>
+                <element inactive_on_update="false" label="Director" sequence="5" value="Director"/>
+                <element inactive_on_update="false" label="Delivery Head" sequence="6" value="Delivery Head"/>
+                <element inactive_on_update="false" label="HR" sequence="7" value="HR"/>
+            </choice>
+        </element>
+        <element choice="1" label="Project/Account" max_length="40" name="project_account" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Zone IT Services" sequence="0" value="Zone IT Services"/>
+                <element inactive_on_update="false" label="YUC Motors" sequence="1" value="YUC Motors"/>
+                <element inactive_on_update="false" label="Qwerty Hospitals" sequence="2" value="Qwerty Hospitals"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Career Level" max_length="40" name="u_career_level" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Email ID" max_length="40" name="u_email_id" type="string"/>
+        <element label="Active" max_length="40" name="u_emp_active" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Manager" max_length="32" name="u_emp_manager" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="u_emp_name" type="string"/>
+        <element label="Photo" max_length="100" name="u_emp_photo" type="icon"/>
+        <element label="New File Attachment" max_length="40" name="u_file_attachment_1" type="file_attachment"/>
+        <element label="Photo" max_length="40" name="u_file_emp_photo" type="file_attachment"/>
+        <element attributes="edge_encryption_enabled=true" label="First Name" max_length="40" name="u_first_name" type="string"/>
+        <element label="New Icon" max_length="100" name="u_icon_10" type="icon"/>
+        <element attributes="edge_encryption_enabled=true" label="Last Name" max_length="40" name="u_last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Mobile Number" max_length="40" name="u_mobile_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="User ID" max_length="40" name="u_user_id" type="string"/>
+        <index name="index">
+            <element name="u_emp_manager"/>
+        </index>
+    </element>
+</database>

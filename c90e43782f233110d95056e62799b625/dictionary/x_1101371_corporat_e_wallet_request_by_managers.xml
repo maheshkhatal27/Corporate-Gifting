@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="a5735b302f633110d95056e62799b6a1" extends="task" label="e-Wallet Request By Managers" max_length="40" name="x_1101371_corporat_e_wallet_request_by_managers" type="collection">
+        <element default="javascript:global.getNextObjNumberPadded();" label="e-Wallet Request Number" max_length="40" name="e_wallet_request_number" type="string"/>
+        <element attributes="encode_utf8=false" label="Requested By" max_length="32" name="u_requested_by" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Requested For" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request Status" max_length="40" name="u_request_status" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Submitted" sequence="0" value="Submitted"/>
+                <element inactive_on_update="false" label="Approval Requested" sequence="1" value="Approval Requested"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Approval Rejected" sequence="2" value="Approval Rejected"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Approved" sequence="3" value="Approved"/>
+                <element inactive_on_update="false" label="Rejected" sequence="4" value="Rejected"/>
+                <element inactive_on_update="false" label="Completed" sequence="5" value="Completed"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="6" value="Cancelled"/>
+            </choice>
+        </element>
+    </element>
+</database>
